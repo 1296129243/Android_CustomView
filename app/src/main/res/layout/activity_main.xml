@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percentview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.MainActivity">
+<!--如果项目中有自定义控件并且有自定义属性的话，在应用自定义属性的时候，需要在布局上面添加
+    xmlns:percentview="http://schemas.android.com/apk/res-auto""-->
+    <com.example.PercentView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        percentview:percent_background_color="@color/colorPrimary"
+        percentview.percent_circle_gravity="left"
+        percentview:percent_circle_progress="30"
+        percentview:percent_circle_radius="50dp"
+        percentview:percent_progress_color="@color/colorPrimaryDark"
+       />
+
+</LinearLayout>
